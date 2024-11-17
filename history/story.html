@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="story.css">
+  <title>History Blocks</title>
+</head>
+<body>
+  <header>
+    <h1>Interactive History Blocks</h1>
+    <p>Click on a block to reveal more information!</p>
+  </header>
+  <main>
+    <!-- Шесть интерактивных блоков -->
+    <div class="info-block" onclick="toggleFlip(this)">
+      <div class="block-content front">
+        <h2>Ancient Egypt</h2>
+        <p>The land of pharaohs and pyramids.</p>
+      </div>
+      <div class="block-content back">
+        <h2>More About Egypt</h2>
+        <p>Did you know the Great Pyramid of Giza is the oldest of the Seven Wonders of the Ancient World?</p>
+      </div>
+    </div>
+    <div class="info-block" onclick="toggleFlip(this)">
+      <div class="block-content front">
+        <h2>Medieval Europe</h2>
+        <p>Knights, castles, and the Middle Ages.</p>
+      </div>
+      <div class="block-content back">
+        <h2>More About Europe</h2>
+        <p>The medieval period lasted from the 5th to the late 15th century.</p>
+      </div>
+    </div>
+    <div class="info-block" onclick="toggleFlip(this)">
+      <div class="block-content front">
+        <h2>Renaissance</h2>
+        <p>The age of art and science.</p>
+      </div>
+      <div class="block-content back">
+        <h2>More About Renaissance</h2>
+        <p>The Renaissance gave us figures like Leonardo da Vinci and Michelangelo.</p>
+      </div>
+    </div>
+    <div class="info-block" onclick="toggleFlip(this)">
+      <div class="block-content front">
+        <h2>Industrial Revolution</h2>
+        <p>The rise of machines and factories.</p>
+      </div>
+      <div class="block-content back">
+        <h2>More About Revolution</h2>
+        <p>It began in the late 18th century and changed the world forever.</p>
+      </div>
+    </div>
+    <div class="info-block" onclick="toggleFlip(this)">
+      <div class="block-content front">
+        <h2>World War II</h2>
+        <p>A conflict that shaped modern history.</p>
+      </div>
+      <div class="block-content back">
+        <h2>More About WWII</h2>
+        <p>It lasted from 1939 to 1945 and involved most of the world's nations.</p>
+      </div>
+    </div>
+    <div class="info-block" onclick="toggleFlip(this)">
+      <div class="block-content front">
+        <h2>Space Age</h2>
+        <p>The race to the stars.</p>
+      </div>
+      <div class="block-content back">
+        <h2>More About Space</h2>
+        <p>The first manned moon landing was in 1969.</p>
+      </div>
+    </div>
+  </main>
+  <script src="story.js"></script>
+</body>
+</html>
