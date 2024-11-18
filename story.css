@@ -1,15 +1,15 @@
 /* Общие стили для страницы */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #101820; /* Темный фон для контраста */
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   overflow-x: hidden;
+  background: #f9e4c8; 
+  color: #000; 
+  font-family: "Georgia", serif;
 }
 
 header {
@@ -20,6 +20,8 @@ header {
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  background: transparent; /* Без фона */
+  box-shadow: none; /* Убираем тени */
 }
 
 header p {
@@ -38,7 +40,6 @@ main {
   grid-template-columns: repeat(2, 1fr)
 }
 
-/* Общие стили */
 .info-block {
   position: relative;
   width: 450px;
@@ -106,7 +107,7 @@ main {
   transform: rotateY(0); /* Показать заднюю сторону */
 }
 
-/* Анимация заднего фона */
+
 body::before {
   content: "";
   position: fixed;
@@ -140,6 +141,7 @@ body::before {
     padding: 0;
   }
   
+  
   .nav-item {
     flex: 0 0 auto;
   }
@@ -148,17 +150,17 @@ body::before {
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 4px;
-    color: #007bff;
+    color: #000000;
     transition: background-color 0.3s, color 0.3s;
   }
   
   .nav-link:hover {
-    background-color: #007bff;
+    background-color: #000000;
     color: #fff;
   }
   
   .nav-link.active {
-    background-color: #0056b3;
+    background-color: #000000;
     color: #fff;
   }
   
