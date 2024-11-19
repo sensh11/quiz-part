@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #1a1a1a; /* Very dark background */
+    color: #e0e0e0; /* Light gray text for contrast */
+    line-height: 1.6;
+    padding: 30px;
+}
+
+/* Background Texture */
+.newspaper-background {
+    background-color: #1a1a1a;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    border-bottom: 3px solid #6a0000; /* Blood red border */
+    padding: 40px 0;
+    margin-bottom: 50px;
+    background-color: #1a1a1a; /* Dark gray header background */
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.header-title h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    color: #f4f4f4; /* Light gray text */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.header-title h2 {
+    font-size: 1.8rem;
+    margin: 5px 0 15px;
+    color: #b3b3b3; /* Lighter gray subtitle */
+}
+
+.navbar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-list a:hover, .nav-list a.active {
+    background-color: #6a0000; /* Blood red hover */
+    color: #fff;
+    border-color: #6a0000;
+    transform: scale(1.1);
+}
+
+/* Main Styles */
+/* Main Styles */
+.featured-story {
+    max-width: 900px;
+    margin: auto;
+    background: #2b2b2b;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+/* Text-Image Wrapper */
+.text-image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.story-image {
+    width: 45%;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.story-image.left {
+    float: left;
+    margin-right: 20px;
+}
+
+.story-image.right {
+    float: right;
+    margin-left: 20px;
+}
+
+.featured-story h1, .featured-story h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.featured-story p {
+    font-size: 1.2rem;
+    color: #d1d1d1;
+}
+
+
+.featured-story blockquote {
+    background-color: #444; /* Dark quote background */
+    border-left: 5px solid #6a0000; /* Blood red left border */
+    padding: 15px;
+    font-style: italic;
+    margin: 30px 0;
+    font-size: 1.3rem;
+    color: #ccc;
+}
+
+/* Interactive Block Styles */
+.interactive-blocks {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.interactive-blocks h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ddd; /* Lighter heading */
+}
+
+.interactive-blocks p {
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+/* Flip Block Styles */
+.info-block {
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+    display: inline-block;
+    border: 2px solid #6a0000; /* Blood red border */
+    perspective: 1200px;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.block-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.6s ease;
+}
+
+.block-content.front {
+    background-color: #3b3b3b; /* Dark front */
+    color: #fff;
+    padding: 20px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #6a0000; /* Blood red border */
+}
+
+.block-content.back {
+    transform: rotateY(180deg);
+    background-color: #2a2a2a; /* Darker back */
+    color: #fff;
+    padding: 20px;
+    font-size: 1.1rem;
+    border-top: 2px solid #6a0000; /* Blood red border */
+}
+
+.info-block.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.info-block.flipped .back {
+    transform: rotateY(0);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px 0;
+    font-size: 1rem;
+    border-top: 3px solid #6a0000; /* Blood red footer border */
+    color: #bbb;
+    background-color: #1a1a1a; /* Dark footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Additional Styling for Hover Effects and Typography */
+.featured-story h1, .header-title h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-list a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-list a:hover, .nav-list a.active {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}

@@ -3,81 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Quiz</title>
+  <title>Alash Movement Quiz</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="old-paper">
   <header class="header">
     <div class="header-row">
       <div class="header-col">
-        <h1 class="blog-header-logo">Alash</h1>
+        <h1 class="blog-header-logo">ALASH</h1>
       </div>
     </div>
     <ul class="nav">
       <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
-      <li class="nav-item"><a href="story.html" class="nav-link" >History</a></li>
+      <li class="nav-item"><a href="history.html" class="nav-link" >History</a></li>
       <li class="nav-item"><a href="members.html" class="nav-link">Members</a></li>
-
     </ul>
   </header>
 
   <div class="quiz-container">
-    <h1>HTML & CSS Quiz</h1>
+    <h1>Alash Movement Quiz</h1>
     <form id="quiz-form">
       <!-- Question 1 -->
       <div class="question-block">
         <h2>Question 1</h2>
-        <p>What does HTML stand for?</p>
-        <label><input type="radio" name="q1" value="1"> Hyperlinks and Text Markup Language</label>
-        <label><input type="radio" name="q1" value="2"> Home Tool Markup Language</label>
-        <label><input type="radio" name="q1" value="3"> Hyper Text Markup Language</label>
-        <label><input type="radio" name="q1" value="4"> Hyper Tool Management Language</label>
+        <p>Who was the leader of the Alash Movement?</p>
+        <label><input type="radio" name="q1" value="1"> Alikhan Bokeykhanov</label>
+        <label><input type="radio" name="q1" value="2"> Ahmet Baitursynov</label>
+        <label><input type="radio" name="q1" value="3"> Mirzhakyp Dulatuly</label>
+        <label><input type="radio" name="q1" value="4"> Mukhamedzhan Tynyshbayev</label>
       </div>
 
       <!-- Question 2 -->
       <div class="question-block">
         <h2>Question 2</h2>
-        <p>What does CSS stand for?</p>
-        <label><input type="radio" name="q2" value="1"> Computer Style Sheets</label>
-        <label><input type="radio" name="q2" value="2"> Cascading Style Sheets</label>
-        <label><input type="radio" name="q2" value="3"> Creative Style Sheets</label>
-        <label><input type="radio" name="q2" value="4"> Compact Style Sheets</label>
+        <p>What year was the Alash Autonomy declared?</p>
+        <label><input type="radio" name="q2" value="1"> 1916</label>
+        <label><input type="radio" name="q2" value="2"> 1917</label>
+        <label><input type="radio" name="q2" value="3"> 1919</label>
+        <label><input type="radio" name="q2" value="4"> 1920</label>
       </div>
 
       <!-- Question 3 -->
       <div class="question-block">
         <h2>Question 3</h2>
-        <p>Which HTML tag is used to define an internal style sheet?</p>
-        <label><input type="radio" name="q3" value="1"> &lt;css&gt;</label>
-        <label><input type="radio" name="q3" value="2"> &lt;script&gt;</label>
-        <label><input type="radio" name="q3" value="3"> &lt;style&gt;</label>
-        <label><input type="radio" name="q3" value="4"> &lt;link&gt;</label>
+        <p>Which city was the main center of the Alash Movement?</p>
+        <label><input type="radio" name="q3" value="1"> Tashkent</label>
+        <label><input type="radio" name="q3" value="2"> Almaty</label>
+        <label><input type="radio" name="q3" value="3"> Orenburg</label>
+        <label><input type="radio" name="q3" value="4"> Astana</label>
       </div>
 
       <!-- Question 4 -->
       <div class="question-block">
         <h2>Question 4</h2>
-        <p>Which CSS property is used to change the text color?</p>
-        <label><input type="radio" name="q4" value="1"> font-color</label>
-        <label><input type="radio" name="q4" value="2"> text-color</label>
-        <label><input type="radio" name="q4" value="3"> color</label>
-        <label><input type="radio" name="q4" value="4"> background-color</label>
+        <p>Which of the following was a primary goal of the Alash Movement?</p>
+        <label><input type="radio" name="q4" value="1"> Establishing an independent Kazakh state</label>
+        <label><input type="radio" name="q4" value="2"> Promoting Russian imperialism</label>
+        <label><input type="radio" name="q4" value="3"> Modernizing the Soviet Union</label>
+        <label><input type="radio" name="q4" value="4"> Promoting communist ideals</label>
       </div>
 
       <!-- Question 5 -->
       <div class="question-block">
         <h2>Question 5</h2>
-        <p>Which is the correct CSS syntax?</p>
-        <label><input type="radio" name="q5" value="1"> {body: color=black;}</label>
-        <label><input type="radio" name="q5" value="2"> body {color: black;}</label>
-        <label><input type="radio" name="q5" value="3"> body: {color=black;}</label>
-        <label><input type="radio" name="q5" value="4"> {body;color:black;}</label>
+        <p>What was the name of the Alash Movement's official newspaper?</p>
+        <label><input type="radio" name="q5" value="1"> Qazaq</label>
+        <label><input type="radio" name="q5" value="2"> Alash Orda</label>
+        <label><input type="radio" name="q5" value="3"> Kyzyl Kazakh</label>
+        <label><input type="radio" name="q5" value="4"> Turkistan</label>
       </div>
 
       <button type="button" onclick="submitQuiz()">Submit</button>
     </form>
     <p id="result"></p>
   </div>
-  <script src="quiz.js"></script>
+
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Bilim ushin</h4>
+            <p>We encourage learning and fighting for our country</p>
+        </div>
+        <div class="footer-section">
+            <h4>Editors </h4>
+            <ul>
+                <li><a href="#">Akhmet Baitursynov</a></li>
+                <li><a href="#">Alikhan Bokeykhan</a></li>
+                <li><a href="#">Mirzhakyp Dulatuly</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 1919 QAZAQ GAZETI</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
